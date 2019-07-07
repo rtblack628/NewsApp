@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item that previews a news article -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding">
+
+    <TextView
+        android:id="@+id/headline"
+        style="@style/HeadlineStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        tools:text="Headline" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/byline"
+            style="@style/BylineStyle"
+            tools:text="Author" />
+
+        <TextView
+            android:id="@+id/publication"
+            style="@style/PublicationStyle"
+            tools:text="Date Published" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trail_text"
+        style="@style/TrailTextStyle"
+        android:layout_width="wrap_content"
+        tools:text="Preview Text" />
+
+</LinearLayout>
